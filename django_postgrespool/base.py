@@ -53,7 +53,7 @@ def is_disconnect(e, connection, cursor):
                 'connection not open' in str(e) or \
                 'could not receive data from server' in str(e)
     elif isinstance(e, InterfaceError):
-        # psycopg2 client errors, psycopg2/conenction.h, psycopg2/cursor.h
+        # psycopg2 client errors, psycopg2/connection.h, psycopg2/cursor.h
         return 'connection already closed' in str(e) or \
                 'cursor already closed' in str(e)
     elif isinstance(e, ProgrammingError):

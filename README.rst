@@ -64,7 +64,7 @@ The total simultaneous connections the pool will allow is ``pool_size + max_over
 
 As an example, databases in the `Heroku Postgres <https://postgres.heroku.com>`_ starter tier have a maximum connection limit of 20. In that case your ``pool_size`` and ``max_overflow``, when combined, should not exceed 20.
 
-Check out the official `SQLAlchemy Connection Pooling <http://docs.sqlalchemy.org/en/latest/core/pooling.html#sqlalchemy.pool.QueuePool.__init__>`_ docs to learn more about the optoins that can be defined in ``DATABASE_POOL_ARGS``.
+Check out the official `SQLAlchemy Connection Pooling <http://docs.sqlalchemy.org/en/latest/core/pooling.html#sqlalchemy.pool.QueuePool.__init__>`_ docs to learn more about the options that can be defined in ``DATABASE_POOL_ARGS``.
 
 Django 1.3 Support
 ------------------
